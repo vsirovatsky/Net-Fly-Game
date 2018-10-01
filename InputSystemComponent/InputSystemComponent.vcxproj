@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6A63810D-DCCD-454C-B08A-D3542A23156F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>InputSystemComponent</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>G:\work\cpp\NetGame\InputSystemComponent\OIS;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="InputSystemAbstractManager.h" />
+    <ClInclude Include="InputSystemException.h" />
+    <ClInclude Include="InputSystemFacade.h" />
+    <ClInclude Include="InputSystemFactory.h" />
+    <ClInclude Include="InputSystemManager.h" />
+    <ClInclude Include="InputSystemTypeDefs.h" />
+    <ClInclude Include="OIS\linux\EventHelpers.h" />
+    <ClInclude Include="OIS\linux\LinuxForceFeedback.h" />
+    <ClInclude Include="OIS\linux\LinuxInputManager.h" />
+    <ClInclude Include="OIS\linux\LinuxJoyStickEvents.h" />
+    <ClInclude Include="OIS\linux\LinuxKeyboard.h" />
+    <ClInclude Include="OIS\linux\LinuxMouse.h" />
+    <ClInclude Include="OIS\linux\LinuxPrereqs.h" />
+    <ClInclude Include="OIS\mac\MacHelpers.h" />
+    <ClInclude Include="OIS\mac\MacHIDManager.h" />
+    <ClInclude Include="OIS\mac\MacInputManager.h" />
+    <ClInclude Include="OIS\mac\MacKeyboard.h" />
+    <ClInclude Include="OIS\mac\MacMouse.h" />
+    <ClInclude Include="OIS\mac\MacPrereqs.h" />
+    <ClInclude Include="OIS\OIS.h" />
+    <ClInclude Include="OIS\OISConfig.h" />
+    <ClInclude Include="OIS\OISEffect.h" />
+    <ClInclude Include="OIS\OISEvents.h" />
+    <ClInclude Include="OIS\OISException.h" />
+    <ClInclude Include="OIS\OISFactoryCreator.h" />
+    <ClInclude Include="OIS\OISForceFeedback.h" />
+    <ClInclude Include="OIS\OISInputManager.h" />
+    <ClInclude Include="OIS\OISInterface.h" />
+    <ClInclude Include="OIS\OISJoyStick.h" />
+    <ClInclude Include="OIS\OISKeyboard.h" />
+    <ClInclude Include="OIS\OISMouse.h" />
+    <ClInclude Include="OIS\OISObject.h" />
+    <ClInclude Include="OIS\OISPrereqs.h" />
+    <ClInclude Include="OIS\resource.h" />
+    <ClInclude Include="OIS\SDL\SDLInputManager.h" />
+    <ClInclude Include="OIS\SDL\SDLJoyStick.h" />
+    <ClInclude Include="OIS\SDL\SDLKeyboard.h" />
+    <ClInclude Include="OIS\SDL\SDLMouse.h" />
+    <ClInclude Include="OIS\SDL\SDLPrereqs.h" />
+    <ClInclude Include="OIS\win32\Win32ForceFeedback.h" />
+    <ClInclude Include="OIS\win32\Win32InputManager.h" />
+    <ClInclude Include="OIS\win32\Win32JoyStick.h" />
+    <ClInclude Include="OIS\win32\Win32KeyBoard.h" />
+    <ClInclude Include="OIS\win32\Win32Mouse.h" />
+    <ClInclude Include="OIS\win32\Win32Prereqs.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="InputSystemComponent.cpp" />
+    <ClCompile Include="InputSystemException.cpp" />
+    <ClCompile Include="InputSystemFacade.cpp" />
+    <ClCompile Include="InputSystemManager.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FF.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

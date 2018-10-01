@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AB86BEC0-BAE4-4079-82F4-B107A651182F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SimpleClient</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\work\cpp\NetGame\Common;G:\work\cpp\NetGame\FileSystemComponent;G:\work\cpp\NetGame\NetSystemComponent;G:\work\cpp\NetGame\NetSystemComponent\RakNet;G:\work\cpp\NetGame\SimpleServer\commonfolder;G:\work\cpp\NetGame\PostComponent;G:\work\cpp\NetGame\VideoSystemComponent;G:\work\cpp\NetGame\VideoSystemComponent\irrlicht;G:\work\cpp\NetGame\SoundSystemComponent;G:\work\cpp\NetGame\SoundSystemComponent\irrKlang;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="clientsettings.txt" />
+    <None Include="ReadMe.txt" />
+    <None Include="sounds.txt" />
+    <None Include="spheresounds.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\SimpleServer\commonfolder\SimpleNetMessages.h" />
+    <ClInclude Include="..\SimpleServer\commonfolder\SimpleNetTypes.h" />
+    <ClInclude Include="GameObjectSoundView.h" />
+    <ClInclude Include="GameObjectSoundViewsRegister.h" />
+    <ClInclude Include="IMessagesSenderProvider.h" />
+    <ClInclude Include="IMovementProcessor.h" />
+    <ClInclude Include="ISimpleMainComponentPanel.h" />
+    <ClInclude Include="ISimpleMovementListener.h" />
+    <ClInclude Include="ISimpleSoundManagerPanel.h" />
+    <ClInclude Include="ISimpleVideoManagerPanel.h" />
+    <ClInclude Include="NetCannotConnectProcessor.h" />
+    <ClInclude Include="NetConnectedProcessor.h" />
+    <ClInclude Include="NetDisonnectedProcessor.h" />
+    <ClInclude Include="NetObjectMovingProcessor.h" />
+    <ClInclude Include="NetUserStateChangedProcessor.h" />
+    <ClInclude Include="NetUserStatusReceiveProcessor.h" />
+    <ClInclude Include="PostMainCompDefaultProcessor.h" />
+    <ClInclude Include="PostMainCompSoundResourceResolveProcessor.h" />
+    <ClInclude Include="PostNetDefaultProcessor.h" />
+    <ClInclude Include="PostNetObjectMovingProcessor.h" />
+    <ClInclude Include="PostSoundDefaultProcessor.h" />
+    <ClInclude Include="PostSoundObjectInfoProcessor.h" />
+    <ClInclude Include="PostSoundResourceResolvedProcessor.h" />
+    <ClInclude Include="PostSoundSingleSoundPlayProcessor.h" />
+    <ClInclude Include="PostSoundUserPositionUpdate.h" />
+    <ClInclude Include="PostVideoAnotherUserStatusChangedProcessor.h" />
+    <ClInclude Include="PostVideoDefaultProcessor.h" />
+    <ClInclude Include="PostVideoObjectMovingProcessor.h" />
+    <ClInclude Include="PostVideoStartupProcessor.h" />
+    <ClInclude Include="SimpleClientContext.h" />
+    <ClInclude Include="SimpleClientException.h" />
+    <ClInclude Include="SimpleClientMessage.h" />
+    <ClInclude Include="SimpleClientTypeDefs.h" />
+    <ClInclude Include="SimpleControlManager.h" />
+    <ClInclude Include="SimpleInputStateSnapshot.h" />
+    <ClInclude Include="SimpleMainComponent.h" />
+    <ClInclude Include="SimpleMovementProcessor.h" />
+    <ClInclude Include="SimpleNetManager.h" />
+    <ClInclude Include="SimpleNetMessagesDispatcher.h" />
+    <ClInclude Include="SimpleNetState.h" />
+    <ClInclude Include="SimpleSoundManager.h" />
+    <ClInclude Include="SimpleSoundMessage.h" />
+    <ClInclude Include="SimpleSoundResolvedResourcesContainer.h" />
+    <ClInclude Include="SimpleSoundState.h" />
+    <ClInclude Include="SimpleVideoManager.h" />
+    <ClInclude Include="SimpleVideoState.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="VideoObjectMovementController.h" />
+    <ClInclude Include="VideoObjectsRegister.h" />
+    <ClInclude Include="VideoSoundPlayRequester.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameObjectSoundView.cpp" />
+    <ClCompile Include="GameObjectSoundViewsRegister.cpp" />
+    <ClCompile Include="NetCannotConnectProcessor.cpp" />
+    <ClCompile Include="NetConnectedProcessor.cpp" />
+    <ClCompile Include="NetDisonnectedProcessor.cpp" />
+    <ClCompile Include="NetObjectMovingProcessor.cpp" />
+    <ClCompile Include="NetUserStateChangedProcessor.cpp" />
+    <ClCompile Include="NetUserStatusReceiveProcessor.cpp" />
+    <ClCompile Include="PostMainCompDefaultProcessor.cpp" />
+    <ClCompile Include="PostMainCompSoundResourceResolveProcessor.cpp" />
+    <ClCompile Include="PostNetDefaultProcessor.cpp" />
+    <ClCompile Include="PostNetObjectMovingProcessor.cpp" />
+    <ClCompile Include="PostSoundDefaultProcessor.cpp" />
+    <ClCompile Include="PostSoundObjectInfoProcessor.cpp" />
+    <ClCompile Include="PostSoundResourceResolvedProcessor.cpp" />
+    <ClCompile Include="PostSoundSingleSoundPlayProcessor.cpp" />
+    <ClCompile Include="PostSoundUserPositionUpdate.cpp" />
+    <ClCompile Include="PostVideoAnotherUserStatusChangedProcessor.cpp" />
+    <ClCompile Include="PostVideoDefaultProcessor.cpp" />
+    <ClCompile Include="PostVideoObjectMovingProcessor.cpp" />
+    <ClCompile Include="PostVideoStartupProcessor.cpp" />
+    <ClCompile Include="SimpleClient.cpp" />
+    <ClCompile Include="SimpleClientException.cpp" />
+    <ClCompile Include="SimpleControlManager.cpp" />
+    <ClCompile Include="SimpleInputStateSnapshot.cpp" />
+    <ClCompile Include="SimpleMainComponent.cpp" />
+    <ClCompile Include="SimpleMovementProcessor.cpp" />
+    <ClCompile Include="SimpleNetManager.cpp" />
+    <ClCompile Include="SimpleNetMessagesDispatcher.cpp" />
+    <ClCompile Include="SimpleNetState.cpp" />
+    <ClCompile Include="SimpleSoundManager.cpp" />
+    <ClCompile Include="SimpleSoundResolvedResourcesContainer.cpp" />
+    <ClCompile Include="SimpleSoundState.cpp" />
+    <ClCompile Include="SimpleVideoManager.cpp" />
+    <ClCompile Include="SimpleVideoState.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="VideoObjectMovementController.cpp" />
+    <ClCompile Include="VideoObjectsRegister.cpp" />
+    <ClCompile Include="VideoSoundPlayRequester.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

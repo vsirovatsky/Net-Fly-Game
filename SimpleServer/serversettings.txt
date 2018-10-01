@@ -1,0 +1,16 @@
+# sleep times of threds in milisecons
+mainthreadsleeptime:15
+
+# server net values
+networkthreadsleeptime:10
+serverport: 60000
+numberOfAllowedConnections:10
+numberOfConnections:10
+
+#initial parameters for user start location
+minx:0
+maxx:1000
+miny:0
+maxy:1000
+minz:50
+maxz:100

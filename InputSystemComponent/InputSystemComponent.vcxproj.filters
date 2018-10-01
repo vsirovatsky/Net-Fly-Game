@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\OIS">
+      <UniqueIdentifier>{4bf7cfcc-cb4a-4b0e-976e-391fe3677c2f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystemFacade.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystemException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystemTypeDefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\OISPrereqs.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\OIS.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\OISConfig.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\OISEffect.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\OISEvents.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\OISException.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\OISFactoryCreator.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\OISForceFeedback.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\OISInputManager.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\OISInterface.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\OISJoyStick.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\OISKeyboard.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\OISMouse.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\OISObject.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\win32\Win32Prereqs.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\win32\Win32ForceFeedback.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\win32\Win32InputManager.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\win32\Win32JoyStick.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\win32\Win32KeyBoard.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\win32\Win32Mouse.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\SDL\SDLInputManager.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\SDL\SDLJoyStick.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\SDL\SDLKeyboard.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\SDL\SDLMouse.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\SDL\SDLPrereqs.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\mac\MacHelpers.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\mac\MacHIDManager.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\mac\MacInputManager.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\mac\MacKeyboard.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\mac\MacMouse.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\mac\MacPrereqs.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\linux\EventHelpers.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\linux\LinuxForceFeedback.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\linux\LinuxInputManager.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\linux\LinuxJoyStickEvents.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\linux\LinuxKeyboard.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\linux\LinuxMouse.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\linux\LinuxPrereqs.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="OIS\resource.h">
+      <Filter>Header Files\OIS</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystemAbstractManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystemManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystemFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystemComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystemFacade.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystemException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystemManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FF.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

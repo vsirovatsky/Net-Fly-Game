@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\NetComonent">
+      <UniqueIdentifier>{c6239603-087c-4025-9b73-586a1a75230f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\NetComponent">
+      <UniqueIdentifier>{500a018a-76ae-468d-9bee-8c5d6da6b3c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NetComonent\Processors">
+      <UniqueIdentifier>{53397116-23c6-4e3d-9296-d0038dab8338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\NetComponent\Processors">
+      <UniqueIdentifier>{bdd7d0e8-0ea8-4c23-8677-74400a67a3d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LogicComponent">
+      <UniqueIdentifier>{432fa91e-df4e-4fb2-8258-0acfc6ee1f3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LogicComponent">
+      <UniqueIdentifier>{457071a5-a5dc-4be4-a1bc-75b8ea3bc7f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LogicComponent\Movement">
+      <UniqueIdentifier>{c2050a26-134d-465c-a35a-18822ea3b44d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LogicComponent\Movement">
+      <UniqueIdentifier>{5f4a813b-3e3b-44af-b660-90d134d1ec09}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="serversettings.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleNetManager.h">
+      <Filter>Header Files\NetComonent</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleServerException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleServerTypeDefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleUsersRegister.h">
+      <Filter>Header Files\NetComonent</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleObjectIdentetyGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="commonfolder\SimpleNetMessages.h">
+      <Filter>Header Files\NetComonent</Filter>
+    </ClInclude>
+    <ClInclude Include="commonfolder\SimpleNetTypes.h">
+      <Filter>Header Files\NetComonent</Filter>
+    </ClInclude>
+    <ClInclude Include="IMessagesSenderProvider.h">
+      <Filter>Header Files\NetComonent</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleServerUserLoginProcessor.h">
+      <Filter>Header Files\NetComonent\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleServerMessagesDispatcher.h">
+      <Filter>Header Files\NetComonent</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleServerUserLogoutProcessor.h">
+      <Filter>Header Files\NetComonent\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleServerUserMoveProcessor.h">
+      <Filter>Header Files\NetComonent\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="IUserManagementProvider.h">
+      <Filter>Header Files\NetComonent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectsRegister.h">
+      <Filter>Header Files\LogicComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Header Files\LogicComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectsManager.h">
+      <Filter>Header Files\LogicComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="MovementObjectController.h">
+      <Filter>Header Files\LogicComponent\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="IUserMovementInformationDispatcher.h">
+      <Filter>Header Files\NetComonent</Filter>
+    </ClInclude>
+    <ClInclude Include="UserMovementInformationDispatcher.h">
+      <Filter>Header Files\LogicComponent\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicFacade.h">
+      <Filter>Header Files\LogicComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectsUpdateCollector.h">
+      <Filter>Header Files\LogicComponent</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleNetManager.cpp">
+      <Filter>Source Files\NetComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleUsersRegister.cpp">
+      <Filter>Source Files\NetComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleObjectIdentetyGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleServerException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleServerMessagesDispatcher.cpp">
+      <Filter>Source Files\NetComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleServerUserLoginProcessor.cpp">
+      <Filter>Source Files\NetComponent\Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleServerUserLogoutProcessor.cpp">
+      <Filter>Source Files\NetComponent\Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleServerUserMoveProcessor.cpp">
+      <Filter>Source Files\NetComponent\Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectsRegister.cpp">
+      <Filter>Source Files\LogicComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files\LogicComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectsManager.cpp">
+      <Filter>Source Files\LogicComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="MovementObjectController.cpp">
+      <Filter>Source Files\LogicComponent\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="UserMovementInformationDispatcher.cpp">
+      <Filter>Source Files\LogicComponent\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicFacade.cpp">
+      <Filter>Source Files\LogicComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectsUpdateCollector.cpp">
+      <Filter>Source Files\LogicComponent</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

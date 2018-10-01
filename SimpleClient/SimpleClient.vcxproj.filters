@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\NetComponent">
+      <UniqueIdentifier>{deaec325-f8ca-46d7-8f34-ce59030d0328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\NetComponent">
+      <UniqueIdentifier>{dd9b2be5-77bb-4326-8d7d-d4669090b4bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VideoComponent">
+      <UniqueIdentifier>{5b1cb2db-31e6-498d-863e-511a0769227b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VideoComponent">
+      <UniqueIdentifier>{355903d3-0256-43b3-beec-2e3d20e88dfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SoundComponent">
+      <UniqueIdentifier>{ce9b21f4-990b-4e20-9063-8c2be305a9c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SoundComponent">
+      <UniqueIdentifier>{d00c94fa-9927-4c57-a6a0-e9e893cea9b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MainComponent">
+      <UniqueIdentifier>{d0910fb7-af10-471c-b2fe-19946ea12fcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MainComponent">
+      <UniqueIdentifier>{bbe88f48-0350-43be-8401-33bc22b5bb4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NetComponent\NetProcessors">
+      <UniqueIdentifier>{ed691245-8cf1-4ace-bcd2-cc92e0fb13e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\NetComponent\NetProcessors">
+      <UniqueIdentifier>{89f2d858-2331-415a-b404-807ccd416f55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NetComponent\PostProcessors">
+      <UniqueIdentifier>{02eb53d0-b5c2-43a8-8166-4318c750bcdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\NetComponent\PostProcessors">
+      <UniqueIdentifier>{048087d5-0ec1-48e1-9ce1-4dbc47af6e9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VideoComponent\PostProcessors">
+      <UniqueIdentifier>{233d7aa3-2b27-49fd-a30f-8252b4c8a0fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VideoComponent\PostProcessors">
+      <UniqueIdentifier>{1f77054c-0889-40d4-a5a6-f72c5204faaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SoundComponent\PostProcessors">
+      <UniqueIdentifier>{4515d256-9cac-4dca-a2a7-302356522978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SoundComponent\PostProcessors">
+      <UniqueIdentifier>{0e582e0d-4996-4084-8817-de160307fec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MainComponent\PostProcessors">
+      <UniqueIdentifier>{77fea4d2-6ca3-4549-a3bb-a08331f717db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MainComponent\PostProcessors">
+      <UniqueIdentifier>{dee479ac-c814-4fc8-991c-88bfd5a8b567}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ControlComponent">
+      <UniqueIdentifier>{8fba6d29-4eb8-4973-810b-ce95daaa0b84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ControlComponent">
+      <UniqueIdentifier>{9c922d52-62d9-4811-b746-2fea49af4e8b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="clientsettings.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="spheresounds.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sounds.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SimpleServer\commonfolder\SimpleNetTypes.h">
+      <Filter>Header Files\NetComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SimpleServer\commonfolder\SimpleNetMessages.h">
+      <Filter>Header Files\NetComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleNetManager.h">
+      <Filter>Header Files\NetComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleClientException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleClientContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleClientTypeDefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleClientMessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleVideoManager.h">
+      <Filter>Header Files\VideoComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoObjectsRegister.h">
+      <Filter>Header Files\VideoComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleSoundManager.h">
+      <Filter>Header Files\SoundComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleSoundMessage.h">
+      <Filter>Header Files\SoundComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleMainComponent.h">
+      <Filter>Header Files\MainComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="IMessagesSenderProvider.h">
+      <Filter>Header Files\NetComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleNetMessagesDispatcher.h">
+      <Filter>Header Files\NetComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="NetConnectedProcessor.h">
+      <Filter>Header Files\NetComponent\NetProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="NetDisonnectedProcessor.h">
+      <Filter>Header Files\NetComponent\NetProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="NetCannotConnectProcessor.h">
+      <Filter>Header Files\NetComponent\NetProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="NetObjectMovingProcessor.h">
+      <Filter>Header Files\NetComponent\NetProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUserStatusReceiveProcessor.h">
+      <Filter>Header Files\NetComponent\NetProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUserStateChangedProcessor.h">
+      <Filter>Header Files\NetComponent\NetProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="PostNetDefaultProcessor.h">
+      <Filter>Header Files\NetComponent\PostProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleNetState.h">
+      <Filter>Header Files\NetComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="PostVideoDefaultProcessor.h">
+      <Filter>Header Files\VideoComponent\PostProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="PostNetObjectMovingProcessor.h">
+      <Filter>Header Files\NetComponent\PostProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="PostVideoObjectMovingProcessor.h">
+      <Filter>Header Files\VideoComponent\PostProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="ISimpleVideoManagerPanel.h">
+      <Filter>Header Files\VideoComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleVideoState.h">
+      <Filter>Header Files\VideoComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="PostVideoStartupProcessor.h">
+      <Filter>Header Files\VideoComponent\PostProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="PostSoundDefaultProcessor.h">
+      <Filter>Header Files\SoundComponent\PostProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="PostSoundSingleSoundPlayProcessor.h">
+      <Filter>Header Files\SoundComponent\PostProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="ISimpleSoundManagerPanel.h">
+      <Filter>Header Files\SoundComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="PostSoundResourceResolvedProcessor.h">
+      <Filter>Header Files\SoundComponent\PostProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleSoundResolvedResourcesContainer.h">
+      <Filter>Header Files\SoundComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleSoundState.h">
+      <Filter>Header Files\SoundComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="PostMainCompDefaultProcessor.h">
+      <Filter>Header Files\MainComponent\PostProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="ISimpleMainComponentPanel.h">
+      <Filter>Header Files\MainComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="PostMainCompSoundResourceResolveProcessor.h">
+      <Filter>Header Files\MainComponent\PostProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleControlManager.h">
+      <Filter>Header Files\ControlComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleMovementProcessor.h">
+      <Filter>Header Files\ControlComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleInputStateSnapshot.h">
+      <Filter>Header Files\ControlComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="IMovementProcessor.h">
+      <Filter>Header Files\ControlComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="ISimpleMovementListener.h">
+      <Filter>Header Files\ControlComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="PostVideoAnotherUserStatusChangedProcessor.h">
+      <Filter>Header Files\VideoComponent\PostProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoObjectMovementController.h">
+      <Filter>Header Files\VideoComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectSoundView.h">
+      <Filter>Header Files\SoundComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectSoundViewsRegister.h">
+      <Filter>Header Files\SoundComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="PostSoundObjectInfoProcessor.h">
+      <Filter>Header Files\SoundComponent\PostProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="PostSoundUserPositionUpdate.h">
+      <Filter>Header Files\SoundComponent\PostProcessors</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoSoundPlayRequester.h">
+      <Filter>Header Files\VideoComponent</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleNetManager.cpp">
+      <Filter>Source Files\NetComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleClientException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleVideoManager.cpp">
+      <Filter>Source Files\VideoComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoObjectsRegister.cpp">
+      <Filter>Source Files\VideoComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleSoundManager.cpp">
+      <Filter>Source Files\SoundComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleMainComponent.cpp">
+      <Filter>Source Files\MainComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleNetMessagesDispatcher.cpp">
+      <Filter>Source Files\NetComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="NetConnectedProcessor.cpp">
+      <Filter>Source Files\NetComponent\NetProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="NetDisonnectedProcessor.cpp">
+      <Filter>Source Files\NetComponent\NetProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="NetCannotConnectProcessor.cpp">
+      <Filter>Source Files\NetComponent\NetProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="NetObjectMovingProcessor.cpp">
+      <Filter>Source Files\NetComponent\NetProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUserStatusReceiveProcessor.cpp">
+      <Filter>Source Files\NetComponent\NetProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUserStateChangedProcessor.cpp">
+      <Filter>Source Files\NetComponent\NetProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="PostNetDefaultProcessor.cpp">
+      <Filter>Source Files\NetComponent\PostProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleNetState.cpp">
+      <Filter>Source Files\NetComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="PostVideoDefaultProcessor.cpp">
+      <Filter>Source Files\VideoComponent\PostProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="PostNetObjectMovingProcessor.cpp">
+      <Filter>Source Files\NetComponent\PostProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="PostVideoObjectMovingProcessor.cpp">
+      <Filter>Source Files\VideoComponent\PostProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleVideoState.cpp">
+      <Filter>Source Files\VideoComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="PostVideoStartupProcessor.cpp">
+      <Filter>Source Files\VideoComponent\PostProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="PostSoundDefaultProcessor.cpp">
+      <Filter>Source Files\SoundComponent\PostProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="PostSoundSingleSoundPlayProcessor.cpp">
+      <Filter>Source Files\SoundComponent\PostProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="PostSoundResourceResolvedProcessor.cpp">
+      <Filter>Source Files\SoundComponent\PostProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleSoundResolvedResourcesContainer.cpp">
+      <Filter>Source Files\SoundComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleSoundState.cpp">
+      <Filter>Source Files\SoundComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="PostMainCompDefaultProcessor.cpp">
+      <Filter>Source Files\MainComponent\PostProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="PostMainCompSoundResourceResolveProcessor.cpp">
+      <Filter>Source Files\MainComponent\PostProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleControlManager.cpp">
+      <Filter>Source Files\ControlComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleMovementProcessor.cpp">
+      <Filter>Source Files\ControlComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleInputStateSnapshot.cpp">
+      <Filter>Source Files\ControlComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="PostVideoAnotherUserStatusChangedProcessor.cpp">
+      <Filter>Source Files\VideoComponent\PostProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoObjectMovementController.cpp">
+      <Filter>Source Files\VideoComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectSoundView.cpp">
+      <Filter>Source Files\SoundComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectSoundViewsRegister.cpp">
+      <Filter>Source Files\SoundComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="PostSoundObjectInfoProcessor.cpp">
+      <Filter>Source Files\SoundComponent\PostProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="PostSoundUserPositionUpdate.cpp">
+      <Filter>Source Files\SoundComponent\PostProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoSoundPlayRequester.cpp">
+      <Filter>Source Files\VideoComponent</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
